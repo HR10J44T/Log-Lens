@@ -1,139 +1,212 @@
-# LogLens: AI-Powered Log Anomaly Detection System
+<div align="center">
 
-An enterprise-grade log anomaly detection system that uses transformer-based models for real-time security monitoring and intelligent alerting.
-
-## Features
-
-- **🤖 AI-Powered Detection**: Fine-tuned BERT variant for log classification and anomaly detection
-- **🔄 Real-time Processing**: Continuous log monitoring with real-time anomaly flagging
-- **📊 Feature Extraction**: Advanced log parsing and semantic similarity analysis
-- **🐳 Containerized Deployment**: Docker-based scalable architecture
-- **🚨 Intelligent Alerting**: Multi-channel alerting system for security events
-- **📈 Performance Monitoring**: Built-in metrics and monitoring capabilities
-
-## Architecture
+# ⚡🟣 **LogLens**
+## **AI-Powered Log Anomaly Detection System**
+### _Enterprise-grade • Transformer-Driven • Real-Time Security Intelligence_
 
 ```
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   Log Sources   │───▶│  Log Processor   │───▶│  BERT Classifier │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-                                │                        │
-                                ▼                        ▼
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   Embeddings    │◀───│  Feature Extract │    │   Anomaly Score │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
-                                                         │
-                                                         ▼
-┌─────────────────┐    ┌──────────────────┐    ┌─────────────────┐
-│   Alert System │◀───│  Threshold Check │◀───│  Real-time API  │
-└─────────────────┘    └──────────────────┘    └─────────────────┘
+
+██████╗  ██████╗  ██████╗ ██╗     ███████╗███╗   ██╗███████╗███████╗
+██╔══██╗██╔═══██╗██╔═══██╗██║     ██╔════╝████╗  ██║██╔════╝██╔════╝
+██║  ██║██║   ██║██║   ██║██║     █████╗  ██╔██╗ ██║█████╗  ███████╗
+██║  ██║██║   ██║██║   ██║██║     ██╔══╝  ██║╚██╗██║██╔══╝  ╚════██║
+██████╔╝╚██████╔╝╚██████╔╝███████╗███████╗██║ ╚████║███████╗███████║
+╚═════╝  ╚═════╝  ╚═════╝ ╚══════╝╚══════╝╚═╝  ╚═══╝╚══════╝╚══════╝
+
 ```
 
-## Quick Start
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=900&color=9D00FF&center=true&vCenter=true&width=500&lines=AI+for+Real-Time+Threat+Detection;Log+Analytics+%2B+Transformer+Models;Secure.+Detect.+Respond.+Evolve." />
 
-### Prerequisites
+---
 
-- Python 3.8+
+### 🔥 **Cyber Badges**
+
+![Static Badge](https://img.shields.io/badge/Framework-Transformers-9D00FF?style=for-the-badge&logo=huggingface&logoColor=white)
+![Static Badge](https://img.shields.io/badge/Python-3.8+-FFD43B?style=for-the-badge&logo=python&logoColor=black)
+![Static Badge](https://img.shields.io/badge/Containerized-Docker-0db7ed?style=for-the-badge&logo=docker&logoColor=white)
+![Static Badge](https://img.shields.io/badge/Security-AI%20Threat%20Detection-FF006E?style=for-the-badge&logo=shield&logoColor=white)
+![Static Badge](https://img.shields.io/badge/Monitoring-Real--Time-00FFFF?style=for-the-badge&logo=datadog)
+
+---
+
+</div>
+
+# 🟣 **Overview**
+
+**LogLens** is an advanced **AI-driven anomaly detection engine** built for SOC teams and enterprise security workflows.  
+Using **Transformer-based models**, it processes logs with **context-aware embeddings**, achieving **real-time detection under 100ms**.
+
+Perfect for:
+
+✔️ SOC Teams  
+✔️ DevSecOps  
+✔️ Cloud Monitoring  
+✔️ Enterprise Security Intelligence  
+
+---
+
+# 🕸️ **Cyberpunk Architecture**
+
+```
+
+╔══════════════════════╗     ╔═══════════════════════╗     ╔══════════════════════╗
+║     LOG SOURCES      ║ ──▶ ║     LOG PROCESSOR     ║ ──▶ ║   BERT CLASSIFIER    ║
+╚══════════════════════╝     ╚═══════════════════════╝     ╚══════════════════════╝
+│                               │
+▼                               ▼
+╔══════════════════════╗     ╔═══════════════════════╗     ╔══════════════════════╗
+║     EMBEDDINGS       ║ ◀── ║   FEATURE EXTRACTOR    ║     ║   ANOMALY SCORING    ║
+╚══════════════════════╝     ╚═══════════════════════╝     ╚══════════════════════╝
+│
+▼
+╔══════════════════════╗     ╔═══════════════════════╗     ╔══════════════════════╗
+║    ALERT ENGINE      ║ ◀── ║   THRESHOLD MODULE     ║ ◀── ║   REAL-TIME API      ║
+╚══════════════════════╝     ╚═══════════════════════╝     ╚══════════════════════╝
+
+````
+
+---
+
+# 🚀 **Quick Start**
+
+## 🔧 Prerequisites
+
+- Python **3.8+**
 - Docker & Docker Compose
-- 8GB+ RAM (for model inference)
+- 8GB+ RAM recommended
 
-### Installation
+---
 
-1. Clone the repository:
+# 📦 Installation
+
+### Clone Repository
 ```bash
 git clone https://github.com/dkgamer02ai/LogLens.git
 cd LogLens
-```
+````
 
-2. Set up virtual environment:
+### Create Virtual Environment
+
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+source .venv/bin/activate     # Windows: .venv\Scripts\activate
 ```
 
-3. Install dependencies:
+### Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Configure environment:
+### Configure Environment
+
 ```bash
 cp .env.example .env
-# Edit .env with your configuration
+# Edit and update values
 ```
 
-### Docker Deployment
+---
 
-1. Build and run with Docker Compose:
+# 🐳 Docker Deployment
+
+### Build & Run
+
 ```bash
 docker-compose up --build
 ```
 
-2. Access the API:
-- Main API: http://localhost:8000
-- Monitoring Dashboard: http://localhost:8001
-- Documentation: http://localhost:8000/docs
+### Access
 
-## Usage
+* API → **[http://localhost:8000](http://localhost:8000)**
+* Dashboard → **[http://localhost:8001](http://localhost:8001)**
+* Docs → **[http://localhost:8000/docs](http://localhost:8000/docs)**
 
-### Training the Model
+---
+
+# 🧠 Model Training
 
 ```bash
-# Generate synthetic log data
 python -m loglens.data.generator --samples 10000
-
-# Train the anomaly detection model
 python -m loglens.models.trainer --config config/training.yaml
-
-# Evaluate model performance
 python -m loglens.models.evaluator --model-path models/bert_classifier.pt
 ```
 
-### Real-time Detection
+---
+
+# ⚡ Real-Time Detection
+
+Start API:
 
 ```bash
-# Start the detection service
 python -m loglens.api.main
-
-# Monitor logs from a file
-python -m loglens.monitor --input /var/log/syslog
-
-# Process logs via API
-curl -X POST "http://localhost:8000/detect" \
-  -H "Content-Type: application/json" \
-  -d '{"logs": ["2024-01-01 10:00:00 INFO User login successful", "2024-01-01 10:00:01 ERROR Failed login attempt from 192.168.1.100"]}'
 ```
 
-### Configuration
+Monitor logs:
 
-The system can be configured via YAML files in the `config/` directory:
+```bash
+python -m loglens.monitor --input /var/log/syslog
+```
 
-- `config/model.yaml`: Model hyperparameters and paths
-- `config/detection.yaml`: Detection thresholds and rules
-- `config/alerting.yaml`: Alert channels and templates
+Send logs to API:
 
-## Model Performance
+```bash
+curl -X POST "http://localhost:8000/detect" \
+-H "Content-Type: application/json" \
+-d '{"logs": ["2024 INFO User login", "2024 ERROR Failed login 192.168.1.100"]}'
+```
 
-- **Accuracy**: 94.2% on synthetic enterprise logs
-- **Precision**: 91.8% for anomaly detection
-- **Recall**: 89.3% for security events
-- **F1-Score**: 90.5% overall performance
-- **Latency**: <100ms per log entry (real-time)
+---
 
-## Contributing
+# ⚙️ Configuration
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+| File             | Description              |
+| ---------------- | ------------------------ |
+| `model.yaml`     | Transformer model config |
+| `detection.yaml` | Scoring thresholds       |
+| `alerting.yaml`  | Notification rules       |
 
-## License
+---
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+# 📊 Model Performance
 
-## Acknowledgments
+* **Accuracy:** 94.2%
+* **Precision:** 91.8%
+* **Recall:** 89.3%
+* **F1 Score:** 90.5%
+* **Latency:** <100ms/log
 
-- Hugging Face Transformers for BERT implementation
-- The open-source community for various ML libraries
-- Enterprise security teams for real-world testing feedback
+---
+
+# 🤝 Contributing
+
+```bash
+git checkout -b feature/new-feature
+git commit -m "Added new feature"
+git push origin feature/new-feature
+```
+
+Submit a PR 🚀
+
+---
+
+# 🪪 License
+
+MIT License.
+
+---
+
+# 🙏 Acknowledgments
+
+* Hugging Face Transformers
+* Open-source ML community
+* Enterprise Security Teams
+
+---
+
+<div align="center">
+
+# 🟣 **“Observe. Detect. Protect.”**
+
+## ⚡ **LogLens — Your AI Security Companion**
+
+</div>
