@@ -1,4 +1,4 @@
-# LogLens Project Summary
+# Log-Lens Project Summary
 
 ## 🔍 AI-Powered Log Anomaly Detection System
 
