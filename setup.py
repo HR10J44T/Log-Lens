@@ -1,5 +1,5 @@
 """
-Log-Lens: AI-Powered Log Anomaly Detection System
+LogLens: AI-Powered Log Anomaly Detection System
 
 An enterprise-grade log anomaly detection system using transformer-based models
 for real-time security monitoring and alerting.
